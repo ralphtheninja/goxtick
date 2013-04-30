@@ -1,0 +1,21 @@
+{
+  "name": "goxtick",
+  "description": "Simple EventEmitter MtGox ticker. Emits ticker and depth events.",
+  "keywords": [],
+  "version": "0.0.1",
+  "author": "Lars-Magnus Skog <lars.magnus.skog@gmail.com>",
+  "repository": {
+    "url": "git://github.com/ralphtheninja/goxtick.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tap --stderr ./test/*.js"
+  },
+  "dependencies": {
+    "socket.io-client": "~0.9.11"
+  },
+  "devDependencies": {
+    "tap": "~0.4.0"
+  },
+  "license": "MIT"
+}
