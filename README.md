@@ -1,6 +1,8 @@
 # Goxtick
 
-Simple node.js event emitter for the [MtGox websocket API](https://en.bitcoin.it/wiki/MtGox/API/Streaming)
+Simple node.js event emitter for the [MtGox websocket API](https://en.bitcoin.it/wiki/MtGox/API/Streaming).
+
+Note: This implementation is based on socket.io-client. If you prefer a stream based API (which you should do) use [goxstream](https://github.com/ralphtheninja/goxstream) instead.
 
 ## Usage
 
