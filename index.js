@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var EventEmitter = require('events').EventEmitter
 var sockio       = require('socket.io-client')
 
@@ -47,7 +45,7 @@ module.exports = function (currency) {
 }
 
 
-if (!module.parent) {
+if (!module.parent && !process.browser) {
   var ticker = module.exports('USD')
   ticker.on('ticker', function (data) {
     console.log('ticker data:', data)
