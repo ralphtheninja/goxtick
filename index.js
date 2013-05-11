@@ -1,27 +1,6 @@
 var EventEmitter = require('events').EventEmitter
 var sockio       = require('socket.io-client')
 
-module.exports.currencies = function () {
-  return {
-      USD: 'USD'
-    , AUD: 'AUD'
-    , CAD: 'CAD'
-    , CHF: 'CHF'
-    , CNY: 'CNY'
-    , DKK: 'DKK'
-    , EUR: 'EUR'
-    , GBP: 'GBP'
-    , HKD: 'HKD'
-    , JPY: 'JPY'
-    , NZD: 'NZD'
-    , PLN: 'PLN'
-    , RUB: 'RUB'
-    , SEK: 'SEK'
-    , SGD: 'SGD'
-    , THB: 'THB'
-  }
-}
-
 module.exports = function (currency) {
   if (!currency || 'string' !== typeof currency)
     currency = 'USD'
@@ -44,6 +23,26 @@ module.exports = function (currency) {
   return emitter
 }
 
+module.exports.currencies = function () {
+  return [
+      'USD'
+    , 'AUD'
+    , 'CAD'
+    , 'CHF'
+    , 'CNY'
+    , 'DKK'
+    , 'EUR'
+    , 'GBP'
+    , 'HKD'
+    , 'JPY'
+    , 'NZD'
+    , 'PLN'
+    , 'RUB'
+    , 'SEK'
+    , 'SGD'
+    , 'THB'
+  ]
+}
 
 if (!module.parent && !process.browser) {
   var ticker = module.exports('USD')
