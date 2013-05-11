@@ -25,23 +25,25 @@ holds the unix time in microseconds and can be use as an identifier.
 
 ```js
 {
-    high: { value: '149.08000',
-            value_int: '14908000',
-            display: '$149.08000',
-            display_short: '$149.08',
-            currency: 'USD' },
-    low: { /* */ },
-    avg: { /* */ },
-    vwap: { /* */ },
-    vol: { /* */ },
-    last_local: { /* */ },
-    last_orig: { /* */ },
-    last_all: { /* */ },
-    last: { /* */ },
-    buy: { /* */ },
-    sell: { /* */ },
-    item: 'BTC',
-    now: '1367323067813653'
+    "high": {
+        "value": "115.84000"
+      , "value_int": "11584000"
+      , "display": "$115.84000"
+      , "display_short": "$115.84"
+      , "currency": "USD"
+    }
+  , "low": {}
+  , "avg": {}
+  , "vwap": {}
+  , "vol": {}
+  , "last_local": {}
+  , "last_orig": {}
+  , "last_all": {}
+  , "last": {}
+  , "buy": {}
+  , "sell": {}
+  , "item": "BTC"
+  , "now": "1368096380598414"
 }
 ```
 
@@ -57,16 +59,16 @@ The depth data has the following format:
 
 ```js
 {
-    price: '144.99',
-    type: 1,
-    type_str: 'ask',
-    volume: '0',
-    price_int: '14499000',
-    volume_int: '0',
-    item: 'BTC',
-    currency: 'USD',
-    now: '1367323067011457',
-    total_volume_int: '1041040000'
+    "price": "92"
+  , "type": 2
+  , "type_str": "bid"
+  , "volume": "14.28693815"
+  , "price_int": "9200000"
+  , "volume_int": "1428693815"
+  , "item": "BTC"
+  , "currency": "USD"
+  , "now": "1368097807984368"
+  , "total_volume_int": "84559126689"
 }
 ```
 
